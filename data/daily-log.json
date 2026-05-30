@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "date": "2026-05-28",
+    "slack": {
+      "received": 51,
+      "sent": 78,
+      "mentions": 26
+    },
+    "gmail": {
+      "inbox": 6,
+      "sent": 5
+    },
+    "themes": [
+      { "name": "Biz Support Tickets", "channel": "slack", "count": 12 },
+      { "name": "Stuck Shifts / Clock Corrections", "channel": "slack", "count": 4 },
+      { "name": "Shift Scheduling", "channel": "slack", "count": 4 },
+      { "name": "COI Requests", "channel": "gmail", "count": 3 },
+      { "name": "Timesheet/Invoice", "channel": "gmail", "count": 2 }
+    ],
+    "totalVolume": 57,
+    "summary": "Biz support tickets dominated Slack at 12 mentions. COI requests were top Gmail theme (3 threads, all Nomaco). Total inbound of 57 is just under the 60-message goal line."
+  }
+]
