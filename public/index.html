@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comms Tracker — Traba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --violet-100: #1A0033; --violet-90: #330066; --violet-80: #4D0099;
+      --violet-70: #6600CC; --violet-60: #8000FF; --violet-50: #9933FF;
+      --violet-40: #BF80FF; --violet-30: #D9B3FF; --violet-20: #E6CCFF;
+      --violet-10: #F5EBFF;
+      --midnight-100: #08105E; --midnight-80: #313981;
+      --midnight-60: #6A70AF; --midnight-40: #9CA0C9; --midnight-10: #F2F3F7;
+      --green-80: #0D5939; --green-70: #138656; --green-60: #1AB273; --green-10: #EDF8F3;
+      --red-80: #910836; --red-70: #C20A47; --red-60: #F20D59; --red-10: #FEE7EE;
+      --orange-80: #915808; --orange-70: #C2750A; --orange-60: #F2930D; --orange-10: #FEF4E7;
+      --blue-80: #133986; --blue-70: #4562A1; --blue-60: #2060DF; --blue-10: #E9EFFC;
+      --gray-80: #414D58; --gray-70: #576675; --gray-60: #66788A;
+      --gray-50: #7A8A99; --gray-40: #B6BFC9; --gray-30: #C4CCD4;
+      --gray-20: #E2E5E9; --gray-10: #F7F7F8; --white: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--midnight-100);
+    }
+
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: 52px; background: var(--white);
+      border-bottom: 1px solid var(--gray-20);
+      display: flex; align-items: center; padding: 0 24px;
+      z-index: 90;
+    }
+
+    .topbar-logo {
+      width: 28px; height: 28px; background: var(--violet-60);
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-weight: 600; font-size: 14px; margin-right: 10px;
+    }
+
+    .topbar-title {
+      font-size: 16px; font-weight: 600; color: var(--midnight-100);
+    }
+
+    .topbar-subtitle {
+      font-size: 12px; color: var(--gray-60); margin-left: 12px;
+    }
+
+    .main {
+      margin-top: 52px; padding: 20px 24px; max-width: 1200px; margin-left: auto; margin-right: auto;
+    }
+
+    /* KPI Cards */
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .kpi-card {
+      background: var(--white); border: 1px solid var(--gray-20);
+      border-radius: 12px; padding: 16px; text-align: center;
+    }
+    .kpi-card:hover { border-color: var(--gray-30); }
+
+    .kpi-value {
+      font-size: 28px; font-weight: 600; color: var(--midnight-100);
+    }
+
+    .kpi-label {
+      font-size: 11px; font-weight: 500; color: var(--gray-60);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px;
+    }
+
+    .kpi-delta {
+      font-size: 11px; font-weight: 500; margin-top: 4px;
+    }
+    .kpi-delta.positive { color: var(--red-70); }
+    .kpi-delta.negative { color: var(--green-70); }
+    .kpi-delta.neutral { color: var(--gray-60); }
+
+    /* Chart Cards */
+    .chart-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .chart-card {
+      background: var(--white); border: 1px solid var(--gray-20);
+      border-radius: 12px; padding: 16px;
+    }
+    .chart-card:hover { border-color: var(--gray-30); }
+    .chart-card.full-width { grid-column: 1 / -1; }
+
+    .chart-header {
+      font-size: 14px; font-weight: 500; color: var(--midnight-100);
+      margin-bottom: 12px;
+    }
+
+    .chart-container {
+      position: relative; height: 240px;
+    }
+
+    /* Daily Log Table */
+    .table-card {
+      background: var(--white); border: 1px solid var(--gray-20);
+      border-radius: 12px; overflow: hidden;
+    }
+    .table-card:hover { border-color: var(--gray-30); }
+
+    .table-card .chart-header {
+      padding: 16px 16px 12px;
+    }
+
+    table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+    }
+
+    th {
+      font-size: 11px; font-weight: 500; color: var(--gray-60);
+      text-transform: uppercase; letter-spacing: 0.5px;
+      background: var(--gray-10); padding: 10px 12px; text-align: left;
+    }
+
+    td {
+      font-size: 13px; color: var(--midnight-100); padding: 12px;
+      border-bottom: 1px solid var(--gray-20);
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #FAFAFA; }
+
+    .summary-cell {
+      font-size: 12px; color: var(--gray-70); max-width: 400px;
+    }
+
+    /* Goal line label */
+    .goal-label {
+      font-size: 10px; font-weight: 500; color: var(--green-70);
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center; padding: 60px 24px; color: var(--gray-60);
+    }
+    .empty-state h2 {
+      font-size: 18px; font-weight: 600; color: var(--midnight-100); margin-bottom: 8px;
+    }
+    .empty-state p { font-size: 13px; }
+
+    /* Badge */
+    .badge {
+      padding: 4px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 500; display: inline-block;
+    }
+    .badge-violet { background: var(--violet-10); color: var(--violet-80); }
+    .badge-blue { background: var(--blue-10); color: var(--blue-80); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .chart-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-logo">T</div>
+    <span class="topbar-title">Comms Tracker</span>
+    <span class="topbar-subtitle" id="last-updated"></span>
+  </div>
+
+  <div class="main" id="main-content">
+    <div class="empty-state" id="empty-state" style="display:none;">
+      <h2>No data yet</h2>
+      <p>Run the daily audit to start tracking communication volume.</p>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="kpi-grid" id="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-total">--</div>
+        <div class="kpi-label">Total Inbound</div>
+        <div class="kpi-delta neutral" id="kpi-total-delta"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-slack">--</div>
+        <div class="kpi-label">Slack Received</div>
+        <div class="kpi-delta neutral" id="kpi-slack-delta"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-gmail">--</div>
+        <div class="kpi-label">Gmail Inbox</div>
+        <div class="kpi-delta neutral" id="kpi-gmail-delta"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" id="kpi-sent">--</div>
+        <div class="kpi-label">Total Sent</div>
+        <div class="kpi-delta neutral" id="kpi-sent-delta"></div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-grid">
+      <div class="chart-card full-width">
+        <div class="chart-header">Daily Total Volume</div>
+        <div class="chart-container">
+          <canvas id="trendChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-header">Channel Breakdown</div>
+        <div class="chart-container">
+          <canvas id="channelChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-header">Theme Breakdown (Latest)</div>
+        <div class="chart-container">
+          <canvas id="themeChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daily Log Table -->
+    <div class="table-card">
+      <div class="chart-header">Daily Log</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Slack In</th>
+            <th>Gmail In</th>
+            <th>Total</th>
+            <th>Top Theme</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody id="log-table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const GOAL_VOLUME = 60;
+    const THEME_COLORS = {
+      'Biz Support Tickets': '#8000FF',
+      'Stuck Shifts / Clock Corrections': '#F2930D',
+      'Stuck Shifts': '#F2930D',
+      'Shift Scheduling': '#2060DF',
+      'Salesforce Errors': '#F20D59',
+      'Timesheet/Invoice': '#1AB273',
+      'COI Requests': '#FFBF00',
+      'Build Failures': '#C20A47',
+      'Indeed Applications': '#6600CC',
+    };
+
+    function getThemeColor(name) {
+      return THEME_COLORS[name] || '#9CA0C9';
+    }
+
+    async function loadData() {
+      try {
+        const resp = await fetch('/data/daily-log.json');
+        if (!resp.ok) throw new Error('Failed to load data');
+        return await resp.json();
+      } catch (e) {
+        console.error('Error loading data:', e);
+        return [];
+      }
+    }
+
+    function computeDelta(current, avg) {
+      if (avg === 0) return { text: '', className: 'neutral' };
+      const diff = current - avg;
+      const pct = Math.round((diff / avg) * 100);
+      const sign = diff > 0 ? '+' : '';
+      // For comms volume, lower is better → positive = red, negative = green
+      const className = diff > 0 ? 'positive' : diff < 0 ? 'negative' : 'neutral';
+      return { text: `${sign}${pct}% vs 7d avg`, className };
+    }
+
+    function renderKPIs(data) {
+      if (data.length === 0) return;
+
+      const latest = data[data.length - 1];
+      const last7 = data.slice(-8, -1); // exclude today, take prior 7
+
+      const avgTotal = last7.length > 0
+        ? Math.round(last7.reduce((s, d) => s + d.totalVolume, 0) / last7.length)
+        : 0;
+      const avgSlack = last7.length > 0
+        ? Math.round(last7.reduce((s, d) => s + d.slack.received, 0) / last7.length)
+        : 0;
+      const avgGmail = last7.length > 0
+        ? Math.round(last7.reduce((s, d) => s + d.gmail.inbox, 0) / last7.length)
+        : 0;
+      const avgSent = last7.length > 0
+        ? Math.round(last7.reduce((s, d) => s + d.slack.sent + d.gmail.sent, 0) / last7.length)
+        : 0;
+
+      document.getElementById('kpi-total').textContent = latest.totalVolume;
+      document.getElementById('kpi-slack').textContent = latest.slack.received;
+      document.getElementById('kpi-gmail').textContent = latest.gmail.inbox;
+      document.getElementById('kpi-sent').textContent = latest.slack.sent + latest.gmail.sent;
+
+      if (last7.length > 0) {
+        const totalDelta = computeDelta(latest.totalVolume, avgTotal);
+        const slackDelta = computeDelta(latest.slack.received, avgSlack);
+        const gmailDelta = computeDelta(latest.gmail.inbox, avgGmail);
+        const sentDelta = computeDelta(latest.slack.sent + latest.gmail.sent, avgSent);
+
+        setDelta('kpi-total-delta', totalDelta);
+        setDelta('kpi-slack-delta', slackDelta);
+        setDelta('kpi-gmail-delta', gmailDelta);
+        setDelta('kpi-sent-delta', sentDelta);
+      }
+    }
+
+    function setDelta(id, delta) {
+      const el = document.getElementById(id);
+      el.textContent = delta.text;
+      el.className = 'kpi-delta ' + delta.className;
+    }
+
+    function renderTrendChart(data) {
+      const ctx = document.getElementById('trendChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: data.map(d => d.date),
+          datasets: [
+            {
+              label: 'Total Inbound',
+              data: data.map(d => d.totalVolume),
+              borderColor: '#8000FF',
+              backgroundColor: 'rgba(128, 0, 255, 0.08)',
+              fill: true,
+              tension: 0.3,
+              pointRadius: 3,
+              pointBackgroundColor: '#8000FF',
+            },
+            {
+              label: 'Goal',
+              data: data.map(() => GOAL_VOLUME),
+              borderColor: '#1AB273',
+              borderDash: [6, 4],
+              pointRadius: 0,
+              borderWidth: 2,
+              fill: false,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                font: { family: 'Poppins', size: 11 },
+                color: '#66788A',
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { color: '#F7F7F8' },
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { color: '#F7F7F8' },
+            }
+          }
+        }
+      });
+    }
+
+    function renderChannelChart(data) {
+      const ctx = document.getElementById('channelChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: data.map(d => d.date),
+          datasets: [
+            {
+              label: 'Slack',
+              data: data.map(d => d.slack.received),
+              backgroundColor: '#8000FF',
+              borderRadius: 3,
+            },
+            {
+              label: 'Gmail',
+              data: data.map(d => d.gmail.inbox),
+              backgroundColor: '#2060DF',
+              borderRadius: 3,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: { font: { family: 'Poppins', size: 11 }, color: '#66788A' }
+            }
+          },
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { display: false },
+            },
+            y: {
+              stacked: true,
+              beginAtZero: true,
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { color: '#F7F7F8' },
+            }
+          }
+        }
+      });
+    }
+
+    function renderThemeChart(data) {
+      if (data.length === 0) return;
+      const latest = data[data.length - 1];
+      const themes = (latest.themes || []).sort((a, b) => b.count - a.count);
+
+      const ctx = document.getElementById('themeChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: themes.map(t => t.name),
+          datasets: [{
+            data: themes.map(t => t.count),
+            backgroundColor: themes.map(t => getThemeColor(t.name)),
+            borderRadius: 3,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { color: '#F7F7F8' },
+            },
+            y: {
+              ticks: { font: { family: 'Poppins', size: 10 }, color: '#66788A' },
+              grid: { display: false },
+            }
+          }
+        }
+      });
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('log-table-body');
+      const rows = data.slice().reverse(); // most recent first
+
+      if (rows.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#66788A;">No data yet</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = rows.map(d => {
+        const topTheme = (d.themes || []).sort((a, b) => b.count - a.count)[0];
+        const topThemeName = topTheme ? topTheme.name : '--';
+        const topThemeCount = topTheme ? topTheme.count : '';
+        const channelBadge = topTheme
+          ? (topTheme.channel === 'slack'
+            ? '<span class="badge badge-violet">Slack</span>'
+            : '<span class="badge badge-blue">Gmail</span>')
+          : '';
+
+        return `<tr>
+          <td>${d.date}</td>
+          <td>${d.slack.received}</td>
+          <td>${d.gmail.inbox}</td>
+          <td><strong>${d.totalVolume}</strong></td>
+          <td>${topThemeName} (${topThemeCount}) ${channelBadge}</td>
+          <td class="summary-cell">${d.summary || ''}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function init() {
+      const data = await loadData();
+
+      if (data.length === 0) {
+        document.getElementById('empty-state').style.display = 'block';
+        document.getElementById('kpi-grid').style.display = 'none';
+        return;
+      }
+
+      const latest = data[data.length - 1];
+      document.getElementById('last-updated').textContent = `Last updated: ${latest.date}`;
+
+      renderKPIs(data);
+      renderTrendChart(data);
+      renderChannelChart(data);
+      renderThemeChart(data);
+      renderTable(data);
+    }
+
+    init();
+  </script>
+</body>
+</html>
