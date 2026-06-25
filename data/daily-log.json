@@ -80,5 +80,46 @@
     ],
     "totalVolume": 156,
     "summary": "Massive volume spike — 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
+  },
+  {
+    "date": "2026-06-24",
+    "slack": {
+      "received": 126,
+      "sent": 131,
+      "mentions": 44
+    },
+    "gmail": {
+      "inbox": 18,
+      "sent": 2
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 16
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 8
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 5
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 4
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 3
+      }
+    ],
+    "totalVolume": 144,
+    "summary": "Biz support tickets led again (16), slightly up from 6/23. Mentions spiked to 44 (up from 19) driven by roster optimization alerts, biz support rule book tags, and worker incident escalations. Clock correction volume rose to 8 with onsite timesheet tool auth work and clock-in requests. Total inbound (144) stayed elevated but down slightly from 6/23's 156."
   }
 ]
