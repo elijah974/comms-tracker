@@ -79,7 +79,7 @@
       }
     ],
     "totalVolume": 156,
-    "summary": "Massive volume spike \u2014 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
+    "summary": "Massive volume spike — 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
   },
   {
     "date": "2026-06-24",
@@ -162,5 +162,41 @@
     ],
     "totalVolume": 104,
     "summary": "Total inbound dropped to 104 (from 144 on 6/24), with Slack received down 40% to 76. Biz support tickets remained top Slack theme (14). Timesheet/invoice was the top Gmail theme (10 threads) driven by bulk invoice notifications, rate disputes, and a waived invoice. Build failures steady at 3 (Apps Script errors)."
+  },
+  {
+    "date": "2026-06-27",
+    "slack": {
+      "received": 8,
+      "sent": 10,
+      "mentions": 4
+    },
+    "gmail": {
+      "inbox": 20,
+      "sent": 3
+    },
+    "themes": [
+      {
+        "name": "Salesforce Errors",
+        "channel": "gmail",
+        "count": 4
+      },
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 4
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 3
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 2
+      }
+    ],
+    "totalVolume": 28,
+    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) — Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
   }
 ]
