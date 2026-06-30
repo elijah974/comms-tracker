@@ -79,7 +79,7 @@
       }
     ],
     "totalVolume": 156,
-    "summary": "Massive volume spike — 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
+    "summary": "Massive volume spike \u2014 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
   },
   {
     "date": "2026-06-24",
@@ -197,6 +197,52 @@
       }
     ],
     "totalVolume": 28,
-    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) — Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
+    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) \u2014 Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
+  },
+  {
+    "date": "2026-06-29",
+    "slack": {
+      "received": 109,
+      "sent": 79,
+      "mentions": 39
+    },
+    "gmail": {
+      "inbox": 58,
+      "sent": 11
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 12
+      },
+      {
+        "name": "Salesforce Errors",
+        "channel": "gmail",
+        "count": 6
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 6
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 4
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 3
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 2
+      }
+    ],
+    "totalVolume": 167,
+    "summary": "Highest volume Monday on record \u2014 167 total inbound (up 6x from Friday's 28). Biz support tickets led Slack (12) with Mama Lola's clock-in escalation, Chairmans shift posts, and Vita Pros scheduling bugs. Salesforce errors spiked to 6 threads (Geopointe, Close Lost flow, MQL flow, batch failures). Heavy DM traffic from Cooper, Dimitri, Humna, MDS, and Jeff Chen around onsite tooling and new FO onboarding."
   }
 ]
