@@ -285,5 +285,46 @@
     ],
     "totalVolume": 179,
     "summary": "Highest total inbound on record (179, up from 167 on 6/29) driven by heavy DM traffic around onsite timesheet debugging, new FO onboarding (Jenny Simoneau setup), and interview rescheduling for Seguin on-site candidates. Salesforce errors tied with timesheet/invoice as top Gmail themes (7 each) — MQL Task Creation flow fired 5 errors overnight. Biz support led Slack (9) with Boring Company and Premier Brands escalations."
+  },
+  {
+    "date": "2026-07-01",
+    "slack": {
+      "received": 111,
+      "sent": 98,
+      "mentions": 30
+    },
+    "gmail": {
+      "inbox": 22,
+      "sent": 1
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 12
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 6
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 5
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 3
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 1
+      }
+    ],
+    "totalVolume": 133,
+    "summary": "Total inbound (133) dropped 26% from Monday's record 179, settling into a normal midweek pace. Biz support led Slack (12) with Mama Lola's clock-in, Chairman Foods DSF, Wisconsin Cheese cancellation, and Berger Textiles 7/3 closure. Heavy DM traffic around onsite hiring (MDS, Oscar on Indeed postings, Grant on FO interviews), invoice adjustments (Shilpa/Saboor), and onsite training portal fixes. Sent volume (98) was highest-ever sent-to-received ratio day, reflecting proactive outreach — scaled accounts transition announcement, timesheet follow-ups, and Ashby job postings."
   }
 ]
