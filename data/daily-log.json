@@ -79,7 +79,7 @@
       }
     ],
     "totalVolume": 156,
-    "summary": "Massive volume spike — 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
+    "summary": "Massive volume spike \u2014 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
   },
   {
     "date": "2026-06-24",
@@ -197,7 +197,7 @@
       }
     ],
     "totalVolume": 28,
-    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) — Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
+    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) \u2014 Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
   },
   {
     "date": "2026-06-29",
@@ -243,7 +243,7 @@
       }
     ],
     "totalVolume": 167,
-    "summary": "Highest volume Monday on record — 167 total inbound (up 6x from Friday's 28). Biz support tickets led Slack (12) with Mama Lola's clock-in escalation, Chairmans shift posts, and Vita Pros scheduling bugs. Salesforce errors spiked to 6 threads (Geopointe, Close Lost flow, MQL flow, batch failures). Heavy DM traffic from Cooper, Dimitri, Humna, MDS, and Jeff Chen around onsite tooling and new FO onboarding."
+    "summary": "Highest volume Monday on record \u2014 167 total inbound (up 6x from Friday's 28). Biz support tickets led Slack (12) with Mama Lola's clock-in escalation, Chairmans shift posts, and Vita Pros scheduling bugs. Salesforce errors spiked to 6 threads (Geopointe, Close Lost flow, MQL flow, batch failures). Heavy DM traffic from Cooper, Dimitri, Humna, MDS, and Jeff Chen around onsite tooling and new FO onboarding."
   },
   {
     "date": "2026-06-30",
@@ -284,7 +284,7 @@
       }
     ],
     "totalVolume": 179,
-    "summary": "Highest total inbound on record (179, up from 167 on 6/29) driven by heavy DM traffic around onsite timesheet debugging, new FO onboarding (Jenny Simoneau setup), and interview rescheduling for Seguin on-site candidates. Salesforce errors tied with timesheet/invoice as top Gmail themes (7 each) — MQL Task Creation flow fired 5 errors overnight. Biz support led Slack (9) with Boring Company and Premier Brands escalations."
+    "summary": "Highest total inbound on record (179, up from 167 on 6/29) driven by heavy DM traffic around onsite timesheet debugging, new FO onboarding (Jenny Simoneau setup), and interview rescheduling for Seguin on-site candidates. Salesforce errors tied with timesheet/invoice as top Gmail themes (7 each) \u2014 MQL Task Creation flow fired 5 errors overnight. Biz support led Slack (9) with Boring Company and Premier Brands escalations."
   },
   {
     "date": "2026-07-01",
@@ -325,6 +325,42 @@
       }
     ],
     "totalVolume": 133,
-    "summary": "Total inbound (133) dropped 26% from Monday's record 179, settling into a normal midweek pace. Biz support led Slack (12) with Mama Lola's clock-in, Chairman Foods DSF, Wisconsin Cheese cancellation, and Berger Textiles 7/3 closure. Heavy DM traffic around onsite hiring (MDS, Oscar on Indeed postings, Grant on FO interviews), invoice adjustments (Shilpa/Saboor), and onsite training portal fixes. Sent volume (98) was highest-ever sent-to-received ratio day, reflecting proactive outreach — scaled accounts transition announcement, timesheet follow-ups, and Ashby job postings."
+    "summary": "Total inbound (133) dropped 26% from Monday's record 179, settling into a normal midweek pace. Biz support led Slack (12) with Mama Lola's clock-in, Chairman Foods DSF, Wisconsin Cheese cancellation, and Berger Textiles 7/3 closure. Heavy DM traffic around onsite hiring (MDS, Oscar on Indeed postings, Grant on FO interviews), invoice adjustments (Shilpa/Saboor), and onsite training portal fixes. Sent volume (98) was highest-ever sent-to-received ratio day, reflecting proactive outreach \u2014 scaled accounts transition announcement, timesheet follow-ups, and Ashby job postings."
+  },
+  {
+    "date": "2026-07-02",
+    "slack": {
+      "received": 101,
+      "sent": 87,
+      "mentions": 43
+    },
+    "gmail": {
+      "inbox": 5,
+      "sent": 22
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 22
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 11
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 4
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 3
+      }
+    ],
+    "totalVolume": 106,
+    "summary": "Pre-holiday Thursday \u2014 total inbound dropped to 106 (from 133 on 7/1) as teams wound down ahead of Independence Day. Biz support hit a record 22 tickets, heavily driven by Veho Tech (14 tickets alone) plus Chairmans Foods, The Feed, Eagle Labs, Atlas Coffee Club, and Berk Enterprises. Gmail sent volume spiked to 22 \u2014 almost entirely Pat Riley's Independence Day shift check-in outreach to ~20 companies, triggering cancellations for 7/3-7/5 at Arrow Container, Benco, Noel Group, Mac Papers, Simbacal, IPL Schoeller, and others. Timesheet/invoice led Gmail themes (11 threads: bulk invoice notifications, Boring Company reminders, Kingmaker timesheet corrections, DoorDash invoice approval). Rhino Staging requested 14 workers for Empower Field on 7/5. Mac Papers offering Kenneth a full-time position, AXN Industries wants to hire Ismael."
   }
 ]
