@@ -362,5 +362,41 @@
     ],
     "totalVolume": 164,
     "summary": "Biz support tickets hit a record 22 (up 83% from 12 on 7/1), heavily driven by Veho Tech plus Chairmans Foods, The Feed, Eagle Labs, and Berk Enterprises. Gmail inbox surged to 63 threads — Timesheet/Invoice led Gmail themes (10 threads). Gmail sent spiked to 22, driven by Pat Riley’s Independence Day shift check-in outreach triggering cancellations at multiple companies. Total inbound (164) rebounded from 133 on 7/1, approaching the 6/29 record of 167."
+  },
+  {
+    "date": "2026-07-05",
+    "slack": {
+      "received": 56,
+      "sent": 53,
+      "mentions": 10
+    },
+    "gmail": {
+      "inbox": 6,
+      "sent": 0
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 5
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 3
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 2
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 2
+      }
+    ],
+    "totalVolume": 62,
+    "summary": "Saturday volume at 62 total inbound — down 62% from Thursday's 164. Slack was dominated by new hire onboarding coordination (MDS on Trabaversity content, Tanner on Neo ramp, Jud/Pat/Max/Matt/Joe on field ops checklist info). Biz support led themes (5) with Boring Company and Chairmans Foods shift posts. Gmail was quiet (6 threads) with 2 Apps Script failures (SDR Stats, Schwebel's 30-hour) and automated invoice reminders."
   }
 ]
