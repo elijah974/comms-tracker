@@ -639,5 +639,51 @@
     ],
     "totalVolume": 34,
     "summary": "Saturday low — total inbound dropped 63% to 34 (from 93 on 7/10), lowest since 6/27's 28. Biz support tickets surged to 31 (new record) driven almost entirely by Veho Tech across multiple markets (Dallas, Atlanta, Detroit, Milwaukee, Nashville, LZU) plus RLG Healthcare and Boring Company. Clock corrections steady at 8 with Andy Frain clock-in codes, Veho clock-ins, and RLG Healthcare manual shift creation. DM traffic was light — offer letter for Tessa Ottrock, DSF invitation behavior question in #eng-help, Berry Perry ban request, and Dialpad access for Ben."
+  },
+  {
+    "date": "2026-07-12",
+    "slack": {
+      "received": 18,
+      "sent": 22,
+      "mentions": 13
+    },
+    "gmail": {
+      "inbox": 22,
+      "sent": 21
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 7
+      },
+      {
+        "name": "Salesforce Errors",
+        "channel": "gmail",
+        "count": 3
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 3
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 3
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 2
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 2
+      }
+    ],
+    "totalVolume": 40,
+    "summary": "Sunday volume at 40 total inbound (up from Saturday's 34 but still weekend-low). Biz support led Slack (7) with Chairmans Foods shift request (Ruben), Carlos Reyes headcount asks, and Neutron follow-ups. Gmail was hiring-heavy — 7+ threads around FO interview scheduling (Victor Vargas Houston, Diego Gonzalez & Steven Gallego Greenville, Pablo Marquez MN) plus Edgardo Rentas offer acceptance. Salesforce errors continued (3 threads: Geopointe Geocoder, Close Lost flow, Opp After Save flow). Railway quest-board deploy crashed 3 times."
   }
 ]
