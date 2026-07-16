@@ -79,7 +79,7 @@
       }
     ],
     "totalVolume": 156,
-    "summary": "Massive volume spike — 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
+    "summary": "Massive volume spike \u2014 156 total inbound (up from 57 on 5/28). Biz support tickets led Slack themes (15). Gmail was heavy on timesheet/invoice threads (8) and Apps Script build failures (7 script error notifications). Slack received count of 119 suggests a very high-activity ops day with heavy DM traffic from MDS, Will, Patty, Mario, and Austin."
   },
   {
     "date": "2026-06-24",
@@ -197,7 +197,7 @@
       }
     ],
     "totalVolume": 28,
-    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) — Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
+    "summary": "Lowest volume day on record (28 total inbound, down 73% from 6/25's 104) \u2014 Friday slowdown with Slack received dropping to just 8. Salesforce errors led themes (4 threads: Geopointe Geocoder, Assignment Plans, batch failure, and Close Lost Stale Opps flow). Rhino Staging timesheets continued steady (3 threads)."
   },
   {
     "date": "2026-06-29",
@@ -243,7 +243,7 @@
       }
     ],
     "totalVolume": 167,
-    "summary": "Highest volume Monday on record — 167 total inbound (up 6x from Friday's 28). Biz support tickets led Slack (12) with Mama Lola's clock-in escalation, Chairmans shift posts, and Vita Pros scheduling bugs. Salesforce errors spiked to 6 threads (Geopointe, Close Lost flow, MQL flow, batch failures). Heavy DM traffic from Cooper, Dimitri, Humna, MDS, and Jeff Chen around onsite tooling and new FO onboarding."
+    "summary": "Highest volume Monday on record \u2014 167 total inbound (up 6x from Friday's 28). Biz support tickets led Slack (12) with Mama Lola's clock-in escalation, Chairmans shift posts, and Vita Pros scheduling bugs. Salesforce errors spiked to 6 threads (Geopointe, Close Lost flow, MQL flow, batch failures). Heavy DM traffic from Cooper, Dimitri, Humna, MDS, and Jeff Chen around onsite tooling and new FO onboarding."
   },
   {
     "date": "2026-06-30",
@@ -284,7 +284,7 @@
       }
     ],
     "totalVolume": 179,
-    "summary": "Highest total inbound on record (179, up from 167 on 6/29) driven by heavy DM traffic around onsite timesheet debugging, new FO onboarding (Jenny Simoneau setup), and interview rescheduling for Seguin on-site candidates. Salesforce errors tied with timesheet/invoice as top Gmail themes (7 each) — MQL Task Creation flow fired 5 errors overnight. Biz support led Slack (9) with Boring Company and Premier Brands escalations."
+    "summary": "Highest total inbound on record (179, up from 167 on 6/29) driven by heavy DM traffic around onsite timesheet debugging, new FO onboarding (Jenny Simoneau setup), and interview rescheduling for Seguin on-site candidates. Salesforce errors tied with timesheet/invoice as top Gmail themes (7 each) \u2014 MQL Task Creation flow fired 5 errors overnight. Biz support led Slack (9) with Boring Company and Premier Brands escalations."
   },
   {
     "date": "2026-07-01",
@@ -325,7 +325,7 @@
       }
     ],
     "totalVolume": 133,
-    "summary": "Total inbound (133) dropped 26% from Monday's record 179, settling into a normal midweek pace. Biz support led Slack (12) with Mama Lola's clock-in, Chairman Foods DSF, Wisconsin Cheese cancellation, and Berger Textiles 7/3 closure. Heavy DM traffic around onsite hiring (MDS, Oscar on Indeed postings, Grant on FO interviews), invoice adjustments (Shilpa/Saboor), and onsite training portal fixes. Sent volume (98) was highest-ever sent-to-received ratio day, reflecting proactive outreach — scaled accounts transition announcement, timesheet follow-ups, and Ashby job postings."
+    "summary": "Total inbound (133) dropped 26% from Monday's record 179, settling into a normal midweek pace. Biz support led Slack (12) with Mama Lola's clock-in, Chairman Foods DSF, Wisconsin Cheese cancellation, and Berger Textiles 7/3 closure. Heavy DM traffic around onsite hiring (MDS, Oscar on Indeed postings, Grant on FO interviews), invoice adjustments (Shilpa/Saboor), and onsite training portal fixes. Sent volume (98) was highest-ever sent-to-received ratio day, reflecting proactive outreach \u2014 scaled accounts transition announcement, timesheet follow-ups, and Ashby job postings."
   },
   {
     "date": "2026-07-02",
@@ -361,7 +361,7 @@
       }
     ],
     "totalVolume": 164,
-    "summary": "Biz support tickets hit a record 22 (up 83% from 12 on 7/1), heavily driven by Veho Tech plus Chairmans Foods, The Feed, Eagle Labs, and Berk Enterprises. Gmail inbox surged to 63 threads — Timesheet/Invoice led Gmail themes (10 threads). Gmail sent spiked to 22, driven by Pat Riley’s Independence Day shift check-in outreach triggering cancellations at multiple companies. Total inbound (164) rebounded from 133 on 7/1, approaching the 6/29 record of 167."
+    "summary": "Biz support tickets hit a record 22 (up 83% from 12 on 7/1), heavily driven by Veho Tech plus Chairmans Foods, The Feed, Eagle Labs, and Berk Enterprises. Gmail inbox surged to 63 threads \u2014 Timesheet/Invoice led Gmail themes (10 threads). Gmail sent spiked to 22, driven by Pat Riley\u2019s Independence Day shift check-in outreach triggering cancellations at multiple companies. Total inbound (164) rebounded from 133 on 7/1, approaching the 6/29 record of 167."
   },
   {
     "date": "2026-07-05",
@@ -397,7 +397,7 @@
       }
     ],
     "totalVolume": 62,
-    "summary": "Saturday volume at 62 total inbound — down 62% from Thursday's 164. Slack was dominated by new hire onboarding coordination (MDS on Trabaversity content, Tanner on Neo ramp, Jud/Pat/Max/Matt/Joe on field ops checklist info). Biz support led themes (5) with Boring Company and Chairmans Foods shift posts. Gmail was quiet (6 threads) with 2 Apps Script failures (SDR Stats, Schwebel's 30-hour) and automated invoice reminders."
+    "summary": "Saturday volume at 62 total inbound \u2014 down 62% from Thursday's 164. Slack was dominated by new hire onboarding coordination (MDS on Trabaversity content, Tanner on Neo ramp, Jud/Pat/Max/Matt/Joe on field ops checklist info). Biz support led themes (5) with Boring Company and Chairmans Foods shift posts. Gmail was quiet (6 threads) with 2 Apps Script failures (SDR Stats, Schwebel's 30-hour) and automated invoice reminders."
   },
   {
     "date": "2026-07-06",
@@ -479,7 +479,7 @@
       }
     ],
     "totalVolume": 184,
-    "summary": "New all-time high total inbound (184, up from 169 on 7/6) with sent nearly matching received (148 vs 149) — highest sent count ever. Biz support led Slack (18) with SnackCraft cancellation, Chairmans Foods shift posts and bad reviews, RLG Healthcare clock-in, and Nathan Roy escalations. Timesheet/Invoice dominated Gmail (14 threads) driven by bulk invoice notifications and Kingmaker/Noel Group timesheets. Heavy DM traffic around onsite hiring (Jovan onboarding, ARC schedule setup, FO interview coordination), T3 account purge strategy (Austin/Carolina), and Field Operator SOP rollout with MDS."
+    "summary": "New all-time high total inbound (184, up from 169 on 7/6) with sent nearly matching received (148 vs 149) \u2014 highest sent count ever. Biz support led Slack (18) with SnackCraft cancellation, Chairmans Foods shift posts and bad reviews, RLG Healthcare clock-in, and Nathan Roy escalations. Timesheet/Invoice dominated Gmail (14 threads) driven by bulk invoice notifications and Kingmaker/Noel Group timesheets. Heavy DM traffic around onsite hiring (Jovan onboarding, ARC schedule setup, FO interview coordination), T3 account purge strategy (Austin/Carolina), and Field Operator SOP rollout with MDS."
   },
   {
     "date": "2026-07-08",
@@ -520,7 +520,7 @@
       }
     ],
     "totalVolume": 82,
-    "summary": "Sharp cooldown — total inbound dropped 55% to 82 (from 184 on 7/7), with Slack received falling to 59 and sent to 38. Biz support led Slack (14) with SnackCraft, Chairmans Foods, and Boring Company tags. Clock corrections stayed elevated (7) with Derwin Riley payment escalation and multiple no-show disputes. Heavy DM traffic around T3 account purge strategy (Carolina/Jud/Austin), onsite hiring (Grant on MN FO pipeline, MDS on Indeed spend), and Schaeffler Seguin launch prep (Chad Frieder)."
+    "summary": "Sharp cooldown \u2014 total inbound dropped 55% to 82 (from 184 on 7/7), with Slack received falling to 59 and sent to 38. Biz support led Slack (14) with SnackCraft, Chairmans Foods, and Boring Company tags. Clock corrections stayed elevated (7) with Derwin Riley payment escalation and multiple no-show disputes. Heavy DM traffic around T3 account purge strategy (Carolina/Jud/Austin), onsite hiring (Grant on MN FO pipeline, MDS on Indeed spend), and Schaeffler Seguin launch prep (Chad Frieder)."
   },
   {
     "date": "2026-07-09",
@@ -556,7 +556,7 @@
       }
     ],
     "totalVolume": 118,
-    "summary": "Slack rebounded sharply — received up 98% to 117 (from 59 on 7/8) and sent hit 128, highest sent-to-received ratio in recent days. Biz support tickets hit a new record of 26, driven by Chairmans Foods escalations (Carlota, Reyan, Rigo) and Neutron auto-tags. Gmail was unusually quiet (1 inbox thread: Boring Company general laborers request). Heavy DM traffic around onsite hiring (Grant/Seguin FO, Sebastian MN, Ashby resume reviews), Laredo bonus structure (Max/MDS), attribute weakening design (Shiv/AK), and channel renaming standardization (~15 channels renamed)."
+    "summary": "Slack rebounded sharply \u2014 received up 98% to 117 (from 59 on 7/8) and sent hit 128, highest sent-to-received ratio in recent days. Biz support tickets hit a new record of 26, driven by Chairmans Foods escalations (Carlota, Reyan, Rigo) and Neutron auto-tags. Gmail was unusually quiet (1 inbox thread: Boring Company general laborers request). Heavy DM traffic around onsite hiring (Grant/Seguin FO, Sebastian MN, Ashby resume reviews), Laredo bonus structure (Max/MDS), attribute weakening design (Shiv/AK), and channel renaming standardization (~15 channels renamed)."
   },
   {
     "date": "2026-07-10",
@@ -597,7 +597,7 @@
       }
     ],
     "totalVolume": 93,
-    "summary": "Friday cooldown — total inbound dropped 21% to 93 (from 118 on 7/9). Biz support tickets fell sharply from record 26 to 8 (Chairmans Foods, Boring Company, Diligent Deliver, mama lola's). Timesheet/Invoice led all themes (12 Gmail threads) driven by bulk DoorDash/NFI payment confirmations, Kingmaker timesheets, Noel Group invoice dispute, and Chairmans credit note. Heavy DM traffic around onsite hiring (offer letters for Tessa/Jose/Jovan, Edgardo final round, Sebastian MN FO) and contract hunt for scaled accounts (Gonzalo/Carolina)."
+    "summary": "Friday cooldown \u2014 total inbound dropped 21% to 93 (from 118 on 7/9). Biz support tickets fell sharply from record 26 to 8 (Chairmans Foods, Boring Company, Diligent Deliver, mama lola's). Timesheet/Invoice led all themes (12 Gmail threads) driven by bulk DoorDash/NFI payment confirmations, Kingmaker timesheets, Noel Group invoice dispute, and Chairmans credit note. Heavy DM traffic around onsite hiring (offer letters for Tessa/Jose/Jovan, Edgardo final round, Sebastian MN FO) and contract hunt for scaled accounts (Gonzalo/Carolina)."
   },
   {
     "date": "2026-07-11",
@@ -638,7 +638,7 @@
       }
     ],
     "totalVolume": 34,
-    "summary": "Saturday low — total inbound dropped 63% to 34 (from 93 on 7/10), lowest since 6/27's 28. Biz support tickets surged to 31 (new record) driven almost entirely by Veho Tech across multiple markets (Dallas, Atlanta, Detroit, Milwaukee, Nashville, LZU) plus RLG Healthcare and Boring Company. Clock corrections steady at 8 with Andy Frain clock-in codes, Veho clock-ins, and RLG Healthcare manual shift creation. DM traffic was light — offer letter for Tessa Ottrock, DSF invitation behavior question in #eng-help, Berry Perry ban request, and Dialpad access for Ben."
+    "summary": "Saturday low \u2014 total inbound dropped 63% to 34 (from 93 on 7/10), lowest since 6/27's 28. Biz support tickets surged to 31 (new record) driven almost entirely by Veho Tech across multiple markets (Dallas, Atlanta, Detroit, Milwaukee, Nashville, LZU) plus RLG Healthcare and Boring Company. Clock corrections steady at 8 with Andy Frain clock-in codes, Veho clock-ins, and RLG Healthcare manual shift creation. DM traffic was light \u2014 offer letter for Tessa Ottrock, DSF invitation behavior question in #eng-help, Berry Perry ban request, and Dialpad access for Ben."
   },
   {
     "date": "2026-07-12",
@@ -684,7 +684,7 @@
       }
     ],
     "totalVolume": 40,
-    "summary": "Sunday volume at 40 total inbound (up from Saturday's 34 but still weekend-low). Biz support led Slack (7) with Chairmans Foods shift request (Ruben), Carlos Reyes headcount asks, and Neutron follow-ups. Gmail was hiring-heavy — 7+ threads around FO interview scheduling (Victor Vargas Houston, Diego Gonzalez & Steven Gallego Greenville, Pablo Marquez MN) plus Edgardo Rentas offer acceptance. Salesforce errors continued (3 threads: Geopointe Geocoder, Close Lost flow, Opp After Save flow). Railway quest-board deploy crashed 3 times."
+    "summary": "Sunday volume at 40 total inbound (up from Saturday's 34 but still weekend-low). Biz support led Slack (7) with Chairmans Foods shift request (Ruben), Carlos Reyes headcount asks, and Neutron follow-ups. Gmail was hiring-heavy \u2014 7+ threads around FO interview scheduling (Victor Vargas Houston, Diego Gonzalez & Steven Gallego Greenville, Pablo Marquez MN) plus Edgardo Rentas offer acceptance. Salesforce errors continued (3 threads: Geopointe Geocoder, Close Lost flow, Opp After Save flow). Railway quest-board deploy crashed 3 times."
   },
   {
     "date": "2026-07-13",
@@ -730,7 +730,7 @@
       }
     ],
     "totalVolume": 198,
-    "summary": "New all-time high total inbound (198, up from 40 on 7/12) — massive Monday rebound. Slack received hit 158 (2nd highest ever) with 61 mentions driven by biz support tags (22), onsite hiring coordination (Grant, Rohan, MDS on FO interviews and offers), and Field Operator Hub workflow mapping (Will, AK, Dorothy). Salesforce errors spiked (5 threads: Contact After Save flow fired 5x, Orum/Phone Counter flows, Geopointe errors). Gmail sent was a record 35 — heavy outbound on FO interview scheduling and offer letters (Tessa Ottrock, Edgardo Rentas digital signing, Jose Rocha). Railway conveyor-sms crashed 5 times."
+    "summary": "New all-time high total inbound (198, up from 40 on 7/12) \u2014 massive Monday rebound. Slack received hit 158 (2nd highest ever) with 61 mentions driven by biz support tags (22), onsite hiring coordination (Grant, Rohan, MDS on FO interviews and offers), and Field Operator Hub workflow mapping (Will, AK, Dorothy). Salesforce errors spiked (5 threads: Contact After Save flow fired 5x, Orum/Phone Counter flows, Geopointe errors). Gmail sent was a record 35 \u2014 heavy outbound on FO interview scheduling and offer letters (Tessa Ottrock, Edgardo Rentas digital signing, Jose Rocha). Railway conveyor-sms crashed 5 times."
   },
   {
     "date": "2026-07-14",
@@ -776,6 +776,52 @@
       }
     ],
     "totalVolume": 238,
-    "summary": "New all-time high total inbound (238, up 20% from 7/13's 198) — Slack received hit a record 196 driven by FO onboarding program design (Patrick/Max/Joe on codifying onsite training sessions), onsite hiring offers (Tessa accepted, Victor accepted, Jose extended), and onboarding session capture templates (MDS/Will/Felix/DJ/RJ). Gmail sent spiked to a record 42 — massive FO interview scheduling outreach (12+ candidates across Charlotte, Greenville, Houston, Maple Grove). Biz support led Slack themes (14) with Chairmans Foods, Boring Company, Mama Lola's, and Neutron auto-tags."
+    "summary": "New all-time high total inbound (238, up 20% from 7/13's 198) \u2014 Slack received hit a record 196 driven by FO onboarding program design (Patrick/Max/Joe on codifying onsite training sessions), onsite hiring offers (Tessa accepted, Victor accepted, Jose extended), and onboarding session capture templates (MDS/Will/Felix/DJ/RJ). Gmail sent spiked to a record 42 \u2014 massive FO interview scheduling outreach (12+ candidates across Charlotte, Greenville, Houston, Maple Grove). Biz support led Slack themes (14) with Chairmans Foods, Boring Company, Mama Lola's, and Neutron auto-tags."
+  },
+  {
+    "date": "2026-07-15",
+    "slack": {
+      "received": 11,
+      "sent": 99,
+      "mentions": 40
+    },
+    "gmail": {
+      "inbox": 21,
+      "sent": 20
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 14
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 5
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 2
+      },
+      {
+        "name": "Salesforce Errors",
+        "channel": "gmail",
+        "count": 1
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 1
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 1
+      }
+    ],
+    "totalVolume": 32,
+    "summary": "Massive cooldown from 7/14's record 238 \u2014 total inbound dropped 87% to 32, lowest since 6/27's 28. Slack received plummeted to 11 (from 196) while sent stayed high at 99, reflecting a heavily outbound day. DM traffic dominated by onsite hiring (Victor/Tessa onboarding emails, FO interview rescheduling for Sarah Ramsey/Giovanni/Yahnick, JD refinement with Grant/Ryan), worker acquisition strategy (MDS/Shiv/AK on v3 attributes), and Robin Spencer Slack troubleshooting. Biz support led themes (14) with Mama Lola's Keith Lamb hours verification, SnackCraft, RLG Healthcare clock-in, Simba, and Chairmans Foods. Gmail sent was heavy (20 threads) driven by FO interview scheduling across Greenville/Charlotte/Houston and new hire onboarding emails for Tessa and Victor."
   }
 ]
