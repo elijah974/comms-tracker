@@ -936,5 +936,46 @@
     ],
     "totalVolume": 25,
     "summary": "Lowest volume day on record (25 total inbound, down 78% from 7/17's 115) — Saturday slowdown. Timesheet/Invoice dominated Gmail (8 threads) with 5 NFI Coupa payment confirmations, Traba past-due and due-today invoice reminders, and Boring Company PO thread. Slack was light — DM traffic mostly personal (Sumeet on Odyssey concert, Alejandro/Finlay on Sammy V tickets) plus onsite hiring coordination (MDS on pay rates, Max on Gustavo offer letter, Patrick on Your Logistics posting). Ops Ticket Duplicator delivered daily digest with 2 active worker support tasks."
+  },
+  {
+    "date": "2026-07-19",
+    "slack": {
+      "received": 34,
+      "sent": 17,
+      "mentions": 1
+    },
+    "gmail": {
+      "inbox": 7,
+      "sent": 0
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 25
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 7
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 5
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 2
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 1
+      }
+    ],
+    "totalVolume": 41,
+    "summary": "Sunday volume at 41 total inbound (up from Saturday's 25). Biz support tickets led all themes (25) — almost entirely Veho Tech across 10+ markets (Atlanta, Houston, San Antonio, Cincinnati, Baltimore, Miami, St Louis, Dallas, Detroit, DC) with Ruben Guarin and Neutron handling shift posts, clock-ins, no-shows, and headcount adjustments. Clock corrections active (7) with Rameriez Gray/Nicolas Saint Louis clock-ins, Shelia Watson no-show dispute, Derrick Kinchen payment reprocessing, and Toni Mullins double NCNS. DM traffic centered on MDS/AK worker acquisition strategy (Indeed redirect, typeform capture, job board improvements) and Edwin gas expense reimbursement."
   }
 ]
