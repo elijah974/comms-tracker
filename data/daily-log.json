@@ -977,5 +977,41 @@
     ],
     "totalVolume": 41,
     "summary": "Sunday volume at 41 total inbound (up from Saturday's 25). Biz support tickets led all themes (25) — almost entirely Veho Tech across 10+ markets (Atlanta, Houston, San Antonio, Cincinnati, Baltimore, Miami, St Louis, Dallas, Detroit, DC) with Ruben Guarin and Neutron handling shift posts, clock-ins, no-shows, and headcount adjustments. Clock corrections active (7) with Rameriez Gray/Nicolas Saint Louis clock-ins, Shelia Watson no-show dispute, Derrick Kinchen payment reprocessing, and Toni Mullins double NCNS. DM traffic centered on MDS/AK worker acquisition strategy (Indeed redirect, typeform capture, job board improvements) and Edwin gas expense reimbursement."
+  },
+  {
+    "date": "2026-07-20",
+    "slack": {
+      "received": 202,
+      "sent": 149,
+      "mentions": 33
+    },
+    "gmail": {
+      "inbox": 6,
+      "sent": 9
+    },
+    "themes": [
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 13
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 4
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 2
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 1
+      }
+    ],
+    "totalVolume": 208,
+    "summary": "New all-time high total inbound (208, up 5x from Sunday's 41) — massive Monday rebound. Slack received hit a record 202, driven by heavy DM traffic around onsite hiring (Gustavo Simisterra offer letter, onboarding, and Slack setup for Patagonia Sea Farms), FO hiring coordination with Alejandro (Cincinnati posting, Ashby access, rejection templates), ATS access troubleshooting (Srishti/Will/Lauren on Chromebook performance, Amber Pineda Quad access), and benefits enrollment scoping (Elise/MDS/Rohan). Biz support led themes (13) with Veho Tech (4 tickets), CompuCycle (2), Clopay Dallas, and Mama Lola's hours recording. Gmail was light (6 inbox) with Rhino contract replies from Diana and Manuel, Rhino invoice follow-up from Michelle, Gustavo's signed offer, and Guang's product update."
   }
 ]
