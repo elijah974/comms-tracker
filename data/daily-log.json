@@ -1054,5 +1054,51 @@
     ],
     "totalVolume": 154,
     "summary": "Total inbound dropped 26% to 154 (from 208 on 7/20) but stayed well above midweek averages. Slack was dominated by training slide deck coordination \u2014 MDS gave detailed feedback on v1, Patrick/Max/Felix/Dimitri reviewed in person. Heavy DM traffic around onsite hiring (Alejandro reviewing FO/CO candidates in Ashby, Knight Swift VA onsite request from Felix, Tessa onsite meeting prep with Grant), worker activation experiments (Finlay/Chloe/Griffin building SMS outreach plans), and onsite permissions/attribution design (Will/Jike/MDS on sourced vs onboarded tracking). Gmail was quiet (5 inbox) with Apps Script failure, Marcos rejection reply, All Hands action item assignment, and Rhino timesheet request."
+  },
+  {
+    "date": "2026-07-22",
+    "slack": {
+      "received": 139,
+      "sent": 78,
+      "mentions": 16
+    },
+    "gmail": {
+      "inbox": 43,
+      "sent": 0
+    },
+    "themes": [
+      {
+        "name": "Salesforce Errors",
+        "channel": "gmail",
+        "count": 29
+      },
+      {
+        "name": "Timesheet/Invoice",
+        "channel": "gmail",
+        "count": 4
+      },
+      {
+        "name": "Build Failures",
+        "channel": "gmail",
+        "count": 3
+      },
+      {
+        "name": "Biz Support Tickets",
+        "channel": "slack",
+        "count": 2
+      },
+      {
+        "name": "Shift Scheduling",
+        "channel": "slack",
+        "count": 2
+      },
+      {
+        "name": "Stuck Shifts / Clock Corrections",
+        "channel": "slack",
+        "count": 1
+      }
+    ],
+    "totalVolume": 182,
+    "summary": "Salesforce errors dominated Gmail (29 threads) \u2014 OrumCallRollupBatch alone generated 20+ exception threads with INVALID_CROSS_REFERENCE_KEY and FIELD_CUSTOM_VALIDATION_EXCEPTION errors, plus Contact After Save Flow, MQL Task Creation, Close Lost Stale Opps, and Geopointe failures. Total inbound (182) up 18% from 7/21's 154. Slack was heavy on onsite hiring coordination (Alejandro on Ashby postings/offer letters, Felix on Charlotte FO Khadijah Laidford, PJ on ERI Holliston, Jud on Crescent Mechanicsburg), FO management restructuring (MDS on regional operator assignments), and worker activation projects (Finlay/Chloe SMS outreach early results). Railway had 3 build failures (customer-pulse, conveyor-sms, traba-onboarding-invitation)."
   }
 ]
